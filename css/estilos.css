@@ -1,0 +1,135 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1{
+    text-align: center;
+}
+
+h1 strong{
+    color: #FADC61;
+}
+
+figcaption{
+    text-align: center;
+    font-style: italic;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 768px){
+    h2 div{
+        width: 150px;
+        border: 2px solid #FADC61;
+        margin-bottom: 5px;
+    }
+}
+
+/* Colores: Celeste #426AAD, Amarillo #FADC61,
+Rojo #E31019, Gris #F9F9F9 */
+
+
+header {
+  
+    text-align: center;
+    border-bottom: 2px solid #FADC61;
+    padding: 20px;
+}
+
+/* Imagen de fondo desde disp.
+    medium en adelante y sin borde*/
+    /* 768 arranca md */
+@media screen and (min-width: 768px){
+    header{
+        border-bottom: 0;
+        background: 
+        url(../img/01.png) no-repeat
+        center top fixed;
+        height: 595px;
+    }
+}
+  
+
+nav{
+    padding-top: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+section{
+    padding: 60px 0;
+}
+
+section:nth-of-type(1){
+    background-color:#F9F9F9;
+    color: #E31019;
+}
+
+section:nth-of-type(2){
+    background-color: #426AAD;
+    color: white;
+}
+
+
+section:nth-of-type(2) article{
+    margin-top: 20px;
+}
+
+section:nth-of-type(4){
+    background: url(../img/trama.jpg);
+    text-align: center;
+}
+
+section:nth-of-type(4) img{
+    max-width: 400px;
+}
+
+section:nth-of-type(3) img:hover,
+section:nth-of-type(4) img:hover{
+    opacity: .5;
+}
+
+footer{
+    background-color: #FADC61;
+    color: #E31019;
+}
+
+
+/* Botones personalizados */
+.btn{
+     border-radius: 10px;
+} 
+
+.btn-primary {
+    color: #fff;
+    background-color: #426AAD;
+    border-color: #426AAD;
+}
+
+.btn-primary:hover {
+    color: #426AAD;
+    background-color: transparent;
+    border-radius: 0;
+    border-color: transparent;
+    border-bottom: 1px solid #FADC61;
+}
+
+
+.btn-danger {
+    color: #E31019;
+    background-color: #FADC61;
+    border-color: #FADC61;
+}
+
+.btn-danger:hover {
+    color: #E31019;
+    background-color: white;
+    border-color: #E31019;
+}
+
+
